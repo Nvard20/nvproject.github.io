@@ -46,9 +46,11 @@ duration: 1500,
 })
 
 $(document).ready(function() {
-  $('<img/>').attr('src', 'img/frame.jpg').on('load', function() {
+
+
+  $('<img/>').attr('src', 'img/wrapper.jpg').on('load', function() {
     $(this).remove(); // prevent memory leaks as @benweet suggested
-    $('.banner').css('background-image', 'url(img/frame.jpg)');
+    $('.banner').css('background-image', 'url(img/wrapper.jpg)');
     $('.logoImage').removeClass('displayNone');
     $('.mainText').removeClass('displayNone');
     $('.individuals').removeClass('displayNone');
