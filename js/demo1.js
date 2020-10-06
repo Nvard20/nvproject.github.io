@@ -130,5 +130,13 @@
             pagination.querySelector('.pagination__item--current').classList.remove('pagination__item--current');
             triggers[newpos].classList.add('pagination__item--current');
         });
+		     window.setInterval(function(){
+            if (slideshow.isAnimating) return;
+            var newpos;
+            newpos = slideshow.current < slideshow.slidesTotal - 1 ? slideshow.current + 1 : 0;
+                slideshow.navigate(newpos);
+            pagination.querySelector('.pagination__item--current').classList.remove('pagination__item--current');
+            triggers[newpos].classList.add('pagination__item--current');
+        }, 5000);
     });
 }
