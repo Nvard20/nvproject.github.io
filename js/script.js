@@ -185,6 +185,7 @@ $(document).ready(function() {
     /*
      *  Different effects
      */
+      $('.fancybox').fancybox();
 
     $(".fancybox-effects-a").fancybox({
         helpers: {
