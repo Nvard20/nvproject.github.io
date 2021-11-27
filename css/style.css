@@ -895,8 +895,7 @@ margin: auto;
     }
 
     .header-menu {
-
-        justify-content: end;
+justify-content: space-between;
         align-items: center;
     }
 
